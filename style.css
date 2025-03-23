@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
 body{
     display:flex;
     flex-direction:column;
     margin:0;
+    font:14px Roboto,sans-serif;
 }
 .header{
     background-color:#1F2937;
@@ -33,6 +35,13 @@ margin-top: 0;
     color:#7a7a7a;
     
 }
+li{
+    border: 2px solid transparent;
+}
+li:hover{
+    border:2px solid #F9FAF8;
+    border-radius:5px;
+}
 nav{
     display:flex;
     justify-content:space-between;
@@ -56,9 +65,13 @@ nav{
     font-weight:700;
     color:#F9FAF8;
 }
+#button:hover{
+    border:5px solid
+}
 .top{
     display:flex;
     justify-content: space-between;
+    gap:5%;
 }
 .sec2{
     background-color: #4d4d4d;
@@ -69,4 +82,56 @@ nav{
     flex-grow:2;
     padding:40px;
 }
+.content1{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:50px;
+    padding-bottom:100px;
+    color:#1F2937;
 
+
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex:1 1 auto;
+    text-wrap:wrap;
+    gap:30px;
+    font-weight:lighter;
+}
+.box{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    text-align: center;
+    flex-basis:180px;
+}
+img{
+    height:180px;
+    width:180px;
+    border-radius:10px;
+    border:5px solid #2b548d;
+}
+
+.content2{
+    display:flex;
+    flex-direction:column;
+    background-color:#bebcbc;
+    padding:5% 20% 5% 20%;
+    font-size:36px;
+    color:#4a4a4a;
+    font-style:italic;
+}
+.quote{
+  font-family: 'Poppins', sans-serif;
+    font-weight:400;
+}
+.author{
+    align-self:flex-end;
+    font-size:20px;
+    font-weight:900;
+    font-style:normal;
+}
